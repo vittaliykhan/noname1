@@ -1,70 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<link rel="stylesheet" href="css/style.css">
-		<title>personal website</title>
-		<meta http-equip="Content-type" content="text/html;charset=UTF-8"/>
-	</head>
-	<body>
-		<nav>
-			<div class="website-name">Vitaliy's notes</div>
-			<ul>
-				<li>
-					<a href="#">About</a>
-				</li>
-				<li>
-					<a href="#">Contact Me</a>
-				</li>
-			</ul>
-		</nav>
-		<!--<div class="corner-text-container">
-			<div>
-				<h2 class="top-left-corner">vitaliy's notes</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>personal website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ps-5">
+		<a class="navbar-brand" href="#">Vitaliy's Notes</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">About Me</a>
+			</li>
+		</div>
+	  </nav>
+
+	 
+    <div class="container py-5">
+		
+        <h1 class="welcome-text text-center text-md-start">Hey! I'm Vitaliy</h1>
+
+        <div class="important-text py-5">
+            <h2>About me</h2>
+            <p style="font-size: 24px;">I am a full-stack developer with a strong focus on frontend development.</p>
+            <p style="font-size: 24px;">I am also a photographer, taekwondo enthusiast, and a musician.</p>
+            <p>Here is the link for my LinkedIn >> <a href="https://www.linkedin.com/in/vitaliykhan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3Crntzu3RW%2BJpRxSVaFLNw%3D%3D"><img src="img/linkedin.png" alt="LinkedIn logo" width="32" height="28"></a></p>
+        
+
+        <div class="tech-stack py-5">
+            <h2>My Tech Stack</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item"><img src="img/c++.png" alt="cpp logo" width="40" height="40"></li>
+                <li class="list-inline-item"><img src="img/java.png" alt="java logo" width="40" height="40"></li>
+                <li class="list-inline-item"><img src="img/python.png" alt="python logo" width="40" height="40"></li>
+            </ul>
+        </div>
+	</div>
+
+        <div>
+            <h2 class="text-center text-md-start">Education</h2>
+            <p style="font-size: 24px;">I am a student at <strong>Astana IT University</strong>. My major is Computer Science, which has helped me gain a good knowledge of basic CS concepts, including Algorithms and Data Structures, and Database Management Systems.</p>
+            <p style="font-size: 24px;">Additionally, I have knowledge in different fields of Mathematics, including Calculus, Linear Algebra, Discrete Mathematics, and more.</p>
+        </div>
+
+        <section id="contact">
+			<div class="container-lg pt-5 bg-light">
+				<div class="text-center">
+					<h2>Get in Touch</h2>
+					<p class="lead">Questions to ask? Fill out the form to contact me directly</p>
+				</div>
+
+
+				<div class="row jusify-content-center my-5">
+					<div class="col-lg-12">
+						<form>
+							<label for="email" class="form-label">Email adress</label>
+							<div class="mb-4 input-group">
+							<span class="input-group-text">
+								<i class="bi bi-envelope"></i>
+							</span>
+							<input type="email" class="form-control" id="email" placeholder="11111@astanait.edu.kz"> 
+							</div>
+							
+							
+							<label for="fullname" class="form-label">Full Name</label>
+							<div class="mb-4 input-group">
+							<span class="input-group-text">
+								<i class="bi bi-person-fill"></i>
+							</span>	
+							<input type="fullname" class="form-control" id="fullname" placeholder="Vitaliy Khan">
+							</div>
+							
+							
+							
+							<div class="form-floating mb-4 mt-5">
+							<textarea id="query" class="form-control" style="height: 140px"></textarea>
+							<label for="query">Your query...</label>
+							</div>
+
+
+							<div class="mb-4 text-center">
+								<button type="submit" class="btn btn-secondary">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
-			<div class="top-right-corner">
-				<a href="#contact">contact me</a>  <a href="education">education</a>
-			</div>
-		</div>
-	-->
-		<h1 class="welcome-text">Hey! I'm Vitaliy</h1>
-		</br>
-		<div class="important-text">
-			<h2>about me</h2>
-			<p>I am a full-stack developer with a strong focus on frontend development.
-			<br>I am also a photographer, taekwondo enthusiast and a musician.
-			<br> <a href="https://www.linkedin.com/in/vitaliykhan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3Crntzu3RW%2BJpRxSVaFLNw%3D%3D"><img src="img/linkedin.png" alt="LinkedIn logo" width= 32px height= 28px></a>
-			</p>
-		</br>
-		<div class="tech-stack">
-			<ul>
-			<li>My Tech Stack | </li>
-			<li><img src="img/c++.png" alt="cpp logo"></li>
-			<li><img src="img/java.png" alt="java logo"></li>
-			<li><img src="img/python.png" alt="python logo"></li>
-			</ul>
-			&nbsp
-		</div>
-		<div><h2>education</h2>
-		<p>I am a student at <strong>Astana IT University</strong>. My major is Computer Science, which has helped me to receive a good knowledge of basic CS concept, which include Algorithms and Data Structures, DataBase Management Systems. &nbsp
-		</p>
-		<p>Additionally, I have some knowledge of different fields in Mathematics (calc1, calc2, calc3, linear algebra, discrete mathematics) and more.
-		</p>
-		</div>
-		</div>
-		<div class="question-section">
-			<h2>Have questions?</h2>
-			<p>If you have any questions about my work or would like to learn more about my services, feel free to reach out. I'll do my bet to get back to you as soon as possible</p>
-			<form action="submit-form.php" method="POST">
-				<!--i will need to host my website somewhere in order for the sumbit-form to work, also i will ned to save it on my hosting website, i guess-->
-				<label for="full-name"></label>
-				<input type="text" id="full-name" name="full-name"  placeholder="full name" required>
-				<br>
-				<label for="email"></label>
-				<input type="email" id="email" name="email" placeholder="email" required>
-				<br>
-				<input type="submit" value="submit">
-			</form>
-		</div>
-		<br>
-	</body>
+		</section>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
